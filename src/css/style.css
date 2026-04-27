@@ -39,3 +39,28 @@ body {
   transition: background-color var(--transition-speed), color var(--transition-speed);
   line-height: 1.6;
 }
+:root {
+  --bg: #ffffff;
+  --text: #111827;
+  --primary: #3b82f6;
+  --accent: #10b981;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f172a;
+    --text: #f8fafc;
+    --primary: #60a5fa;
+  }
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
